@@ -1,0 +1,159 @@
+@import '../../../scss/main.scss';
+
+.brook {
+    background-color: #b8882c;
+    padding: 24px 48px;
+    position: relative;
+
+    .brook-footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        .main-brook {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+
+            .brook-icon {
+                background-color: #fff;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 100%;
+                    height: 25px;
+                }
+            }
+
+            .brook-text {
+                p {
+                    max-width: 300px;
+                    font-size: 16px;
+                }
+
+                a {
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 24px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: #373f41;
+    margin-top: -50px;
+
+    .main-Street {
+        padding: 80px 0 43px 0;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+
+        .Street-logo {
+            display: flex;
+            gap: 50px;
+
+            img {
+                border-right: 1px solid white;
+                padding: 0 20px 0 0;
+            }
+
+            p {
+                font-weight: 600;
+                font-size: 16px;
+                color: #d6d6d6;
+                line-height: 20px;
+            }
+        }
+
+        .Street-menu {
+            display: flex;
+            gap: 30px;
+
+            a {
+                display: block;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 28px;
+                cursor: pointer;
+                color: #fff;
+            }
+
+        }
+    }
+}
+
+.reserved {
+    background-color: var(--theme-button-background-color);
+    color: #fff;
+    padding: 12px 0;
+
+    span {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        color: #d6d6d6;
+        text-align: center;
+        cursor: pointer;
+        display: block;
+    }
+
+}
+
+@media(max-width:768px) {
+    .brook {
+
+        .brook-footer {
+            display: block;
+
+            .main-brook {
+                border-bottom: 1px solid #c3cbcd;
+                padding: 25px 0;
+            }
+        }
+    }
+
+    .footer {
+        background-color: #373f41;
+        margin-top: -50px;
+
+        .main-Street {
+            display: block;
+
+            .Street-logo {
+                display: flex;
+                gap: 50px;
+                align-items: center;
+                justify-content: center;
+                padding: 0 0 24px 0;
+            }
+
+            .Street-menu {
+                display: flex;
+                gap: 8px 28px;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media(max-width:576px) {
+    .footer {
+     
+        .main-Street {
+
+            .Street-menu {
+                flex-wrap: wrap;
+                display: flex;
+                gap: 8px 28px;
+            }
+        }
+    }
+}

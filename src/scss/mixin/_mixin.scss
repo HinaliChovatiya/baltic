@@ -1,0 +1,6 @@
+@mixin button{
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: var(--theme-button-background-color);
+}
